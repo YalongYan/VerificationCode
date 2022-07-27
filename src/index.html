@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="validate_drag.css">
+    <link rel="stylesheet" href="./validate_pt.css">
+
+</head>
+<body>
+<div>
+    <!-- 滑块 -->
+    <div id="dragContainer"> <!-- 容器初始背景 -->
+        <div id="dragBg"></div> <!-- 绿色背景 -->
+        <div id="dragText"></div> <!-- 滑动容器文本 -->
+        <div id="dragHandler" class="dragHandlerBg"></div>
+    </div>
+
+    <!-- 拼图 -->
+    <div class="jigsaw_wrapper">
+        <div id="captcha" style="position: relative"></div>
+    </div>
+
+    <div id="code_wrapper">
+        <div id="code" style="width: 100px"></div>
+        <input id="code_input"/>
+        <button id="code_btn">验证</button>
+    </div>
+</div>
+<script src="validate_drag.js"></script>
+<script src="./validate_pt.js"></script>
+<script src="./validate_code.js"></script>
+</body>
+</html>
